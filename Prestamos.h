@@ -9,14 +9,13 @@ class Prestamos
 	private: 
 	
 	Libro prestado;
-	char fechaP[20];
-	char fechaD[20];
-	char est1='ocupado';
-	char est2='devuelto';
+	char f1[20];
+	char f2[20];
+	bool estatus=true;
 	Usuario nom;
 	public:
 		Prestamos();
-		Prestamos(Libro,char[],char[],char,char,Usuario);
+		Prestamos(Libro ,char[],char[],bool,Usuario);
 		void getLibro();
 		void update();
 		void toString();
